@@ -1,3 +1,11 @@
 # Tomato City
 
-Any type of tomato you can imagine is available here
+This is Tomato City, where every type of tomato is available.
+
+## Screenshots
+
+[]
+
+## Live Demo
+
+[]
