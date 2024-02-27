@@ -2,10 +2,10 @@
 
 This is Tomato City, where every type of tomato is available.
 
-## Screenshots
+## Features
 
 []
 
-## Live Demo
+## Web Application
 
 []
