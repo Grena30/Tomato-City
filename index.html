@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomato City - Home</title>
+    <title>Tomato City</title>
 
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kode+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <h1 class="header-title">Welcome to Tomato City</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -27,23 +31,47 @@
 
     <section id="home">
         <div class="home-content">
-            <h2 class="section-title">Welcome to Tomato City</h2>
-            <p>At Tomato City, we offer a wide selection of fresh, delicious tomatoes!</p>
+            <h2 class="section-title">Welcome to Tomato City,</h2>
+            <p>Here we offer a wide selection of fresh, delicious tomatoes!</p>
+            
         </div>
     </section>
 
     <section id="about" class="section">
         <h2 class="section-title">About Tomato City</h2>
         <p>Welcome to Tomato City, where you can find every type of tomato imaginable!</p>
-        <p>Our mission is to provide the freshest and highest quality tomatoes to our customers.</p>
+        <p>Tomato City was founded in 1998 by tomato enthusiasts who wanted to bring the freshest and most flavorful tomatoes to the community.</p>
+        <p>We are located at:</p>
+        <!-- Embed Google Maps with a random pin -->
+        <!-- <iframe width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed/v1/place?q=Tomato+City&key=YOUR_API_KEY_HERE"></iframe> -->
     </section>
 
     <section id="varieties" class="section">
         <h2 class="section-title">Tomato Varieties</h2>
-        <p>Explore the wide range of tomato varieties we offer:</p>
-        <!-- Images -->
+        <div class="variety-container">
+            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+                <img src="image/cherry_tomatoes.jpg" alt="Cherry Tomatoes">
+                <h3>Cherry Tomato</h3>
+                <p>$2.99 per kg</p>
+            </div>
+            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+                <img src="image/heirloom_tomatoes.jpg" alt="Heirloom Tomatoes">
+                <h3>Heirloom Tomato</h3>
+                <p>$3.49 per kg</p>
+            </div>
+            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+                <img src="image/box_tomatoes.jpg" alt="Box Tomatoes">
+                <h3>Box Tomato</h3>
+                <p>$1.99 per kg</p>
+            </div>
+            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+                <img src="image/salad_tomatoes.jpg" alt="Salad Tomatoes">
+                <h3>Salad Tomato</h3>
+                <p>$2.79 per kg</p>
+            </div>
+        </div>
     </section>
-
+    
     <section id="contact" class="section">
         <h2 class="section-title">Contact Us</h2>
         <p>Email: info@tomatocity.com</p>

@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 #home {
-    background-image: url('./images/tomatoes_home.png');
+    background-image: url('./image/tomatoes_home.png');
     background-size: cover;
     background-position: center;
     height: 91.5vh;
@@ -65,6 +65,42 @@ nav ul li a {
     max-width: 60%;
     text-align: left;
 }
+
+.variety-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.variety-card {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.variety-card:hover {
+    border-color: #d9534f;
+}
+
+.variety-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.variety-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.variety-card p {
+    margin: 0;
+}
+
 
 footer {
     text-align: center;
