@@ -34,52 +34,75 @@
 
     <section id="home">
         <div class="home-content">
-            <h2 class="section-title">Welcome to Tomato City,</h2>
-            <p>Here we offer a wide selection of fresh, delicious tomatoes!</p>
-            <a href="https://www.tomatocitypizzamenu.com/" class="learn-more-button">Learn More</a>
+            <h2 class="home-title">Welcome to Tomato City</h2>
+            <p class="home-desc">Here we offer a wide selection of fresh, delicious tomatoes!</p>
+            <a href="https://www.tomatocitypizzamenu.com/" target="_blank" class="learn-more-button">Learn More</a>
         </div>
     </section>
 
     <section id="about" class="section">
         <h2 class="section-title">About Tomato City</h2>
-        <p>Welcome to Tomato City, where you can find every type of tomato imaginable!</p>
-        <p>Tomato City was founded in 1998 by tomato enthusiasts who wanted to bring the freshest and most flavorful tomatoes to the community.</p>
-        <p>We are located at:</p>
-        <!-- Embed Google Maps with a random pin -->
-        <!-- <iframe width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed/v1/place?q=Tomato+City&key=YOUR_API_KEY_HERE"></iframe> -->
+        <p>Welcome to Tomato City, where you can find every type of tomato imaginable!. Tomato City was founded in 1998 by tomato enthusiasts who wanted to bring the freshest and most flavorful tomatoes to the community.</p>
+        <img src="img/tomatoes_about.jpg" alt="Tomato City Image">
     </section>
 
     <section id="varieties" class="section">
         <h2 class="section-title">Tomato Varieties</h2>
         <div class="variety-container">
-            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+            <div class="variety-card">
                 <img src="img/cherry_tomatoes.jpg" alt="Cherry Tomatoes">
                 <h3>Cherry Tomato</h3>
                 <p>$2.99 per kg</p>
+                <button class="buy-button">
+                    <a href="https://www.naturefresh.ca/types-of-tomatoes-guide/" target="_blank"><i class="fas fa-cart-plus"></i> Buy</a></button>
             </div>
-            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+            <div class="variety-card">
                 <img src="img/heirloom_tomatoes.jpg" alt="Heirloom Tomatoes">
                 <h3>Heirloom Tomato</h3>
                 <p>$3.49 per kg</p>
+                <button class="buy-button">
+                    <a href="https://www.naturefresh.ca/types-of-tomatoes-guide/" target="_blank"><i class="fas fa-cart-plus"></i> Buy</a></button>
             </div>
-            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+            <div class="variety-card">
                 <img src="img/box_tomatoes.jpg" alt="Box Tomatoes">
                 <h3>Box Tomato</h3>
                 <p>$1.99 per kg</p>
+                <button class="buy-button">
+                    <a href="https://www.naturefresh.ca/types-of-tomatoes-guide/" target="_blank"><i class="fas fa-cart-plus"></i> Buy</a></button>
             </div>
-            <div class="variety-card" onclick="window.location='https://www.naturefresh.ca/types-of-tomatoes-guide/';">
+            <div class="variety-card">
                 <img src="img/salad_tomatoes.jpg" alt="Salad Tomatoes">
                 <h3>Salad Tomato</h3>
                 <p>$2.79 per kg</p>
+                <button class="buy-button">
+                    <a href="https://www.naturefresh.ca/types-of-tomatoes-guide/" target="_blank"><i class="fas fa-cart-plus"></i> Buy</a></button>
             </div>
         </div>
     </section>
     
     <section id="contact" class="section">
-        <h2 class="section-title">Contact Us</h2>
-        <p><i class="fas fa-envelope"></i> info@tomatocity.com</p>
-        <p><i class="fas fa-phone"></i> 123-456-7890</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> info@tomatocity.com</p>
+                <p><i class="fas fa-phone"></i> 123-456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i>    123 Tomato Street, Tomato City</p>
+            </div>
+            <div class="submission-form">
+                <h2>Submission Form</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </section>
+ 
 
     <footer>
         <p>Copyright &copy; 2024 Tomato City. All rights reserved.</p>
