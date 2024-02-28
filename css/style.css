@@ -1,4 +1,12 @@
-/* Add your custom CSS styles here */
+:root {
+    --primary-color: #d9534f;
+    --secondary-color: #5bc0de;
+    --button-color: #5cb85c;
+    --quaternary-color: #f0ad4e;
+    --quinary-color: #428bca;
+    --primary-font: "Kode Mono", monospace;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -72,7 +80,7 @@ nav ul li a {
 
 .home-title,
 .home-desc {
-    background-color: red;
+    background-color: #d9534f;
     padding: 10px;
     border-radius: 5px;
 }
@@ -242,11 +250,16 @@ nav ul li a {
     border-radius: 4px;
 }
 
+.submission-form label {
+    font-size: large;
+}
+
 .submission-form button[type="submit"] {
     display: block;
     background-color: #d9534f;
     color: white;
     border: none;
+    font-size: large;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
