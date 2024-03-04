@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --primary-color: #d9534f;
     --secondary-color: #5bc0de;
@@ -9,6 +10,7 @@
     --primary-font: "Kode Mono", monospace;
 }
 
+/* General */
 * {
     box-sizing: border-box;
 }
@@ -20,6 +22,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Header */
 header {
     background-color: #d9534f;
     color: white;
@@ -31,6 +34,7 @@ header {
     margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -48,6 +52,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Sections */
 .section {
     padding: 50px;
     margin-bottom: 50px;
@@ -61,6 +66,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Home */
 #home {
     background-image: url('../img/tomatoes_home.png');
     background-size: cover;
@@ -98,6 +104,47 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+/* Home - Learn more button */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.learn-more-button:hover {
+    background-color: var(--button-color-hover);
+    transform: scale(1.05);
+}
+
+.learn-more-button:active {
+    transform: translateY(1px);
+}
+
+/* About */
+#about {
+    p {
+        max-width: 800px;
+        font-size: medium;
+        margin: 0 auto;
+    }
+    img {
+        width: 1000px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 5px solid #d9534f;
+    
+    }
+}
+
+
+/* Varieties */
 .variety-container {
     display: flex;
     flex-wrap: wrap;
@@ -135,27 +182,6 @@ nav ul li a {
     font-size: large;
 }
 
-.learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background-color: var(--button-color);
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-}
-
-.learn-more-button:hover {
-    background-color: var(--button-color-hover);
-    transform: scale(1.05);
-}
-
-.learn-more-button:active {
-    transform: translateY(1px);
-}
-
 #varieties {
     /* padding: 100px 0; */
     background-color: #d9534f;
@@ -164,22 +190,30 @@ nav ul li a {
     }
 }
 
-#about {
-    p {
-        max-width: 800px;
-        font-size: medium;
-        margin: 0 auto;
-    }
-    img {
-        width: 1000px;
-        height: auto;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 5px solid #d9534f;
-    
+/* Varieties - Buy button */
+.buy-button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    a {
+        color: white;
+        text-decoration: none;
     }
 }
 
+.buy-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.buy-button i {
+    margin-right: 5px; 
+}
+
+/* Contact */
 .contact-container {
     position: relative;
 }
@@ -207,6 +241,7 @@ nav ul li a {
     
 }
 
+/* Contact - Submission form */
 .submission-form {
     flex-basis: 50%;
     margin: auto;
@@ -259,28 +294,7 @@ nav ul li a {
     background-color: var(--button-color-hover);
 }
 
-.buy-button {
-    background-color: var(--button-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    a {
-        color: white;
-        text-decoration: none;
-    }
-}
-
-.buy-button:hover {
-    background-color: var(--button-color-hover);
-}
-
-.buy-button i {
-    margin-right: 5px; 
-}
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
