@@ -301,3 +301,97 @@ footer {
     background-color: #d9534f;
     color: white;
 }
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 0px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    /* Header */
+    header {
+        padding: 15px;
+    }
+    .header-title {
+        font-size: 24px;
+    }
+
+    /* Home */
+    #home {
+        height: 420px;
+    }
+    .home-content {
+        max-width: 90%;
+    }
+    .home-title {
+        font-size: 24px;
+    }
+    .home-desc {
+        font-size: 14px;
+    }
+
+    /* About */
+    #about p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+    #about img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Varieties */
+    .variety-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .variety-card h3,
+    .variety-card p {
+        font-size: 14px;
+    }
+    .variety-card img {
+        height: 150px;
+    }
+
+    /* Contact */
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contact-info {
+        position: relative;
+        text-align: left;
+        max-width: 300px;
+        left: 0px;
+        margin-bottom: -40px;
+    }
+    .submission-form {
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+    .submission-form h2 {
+        font-size: 24px;
+    }
+    .submission-form label {
+        font-size: 16px;
+    }
+    .submission-form input,
+    .submission-form textarea {
+        font-size: 14px;
+    }
+    .submission-form button[type="submit"] {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+}
