@@ -108,15 +108,24 @@
         </div>
     </section>
     
+    <section id="upload-section" class="mobile-only">
+        <div class="section-title">Upload Your Tomato Image</div>
+        <input type="file" id="tomato-image-input" accept="image/*">
+        <div id="image-preview"></div>
+        <button id="upload-button">Upload</button>
+        <div id="upload-message"></div>
+    </section>
+      
+
     <section id="contact" class="section">
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Contact Information</h2>
-                <p><i class="fas fa-envelope"></i> info@tomatocity.com</p>
+                <p><i class="fas fa-envelope"></i> info@tomato.com</p>
                 <p><i class="fas fa-phone"></i> 123-456-7890</p>
                 <p><i class="fas fa-map-marker-alt"></i>    123 Tomato Street, Tomato City</p>
             </div>
-            <div class="submission-form">
+            <div id="submissionForm" class="submission-form">
                 <h2>Submission Form</h2>
                 <form action="#" method="POST">
                     <label for="name">Name:</label><br>
@@ -125,7 +134,7 @@
                     <input type="email" id="email" name="email"><br>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message"></textarea><br>
-                    <button type="submit">Submit</button>
+                    <button id="submitButton" type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -135,5 +144,7 @@
     <footer>
         <p>Copyright &copy; 2024 Tomato City. All rights reserved.</p>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
