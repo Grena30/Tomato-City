@@ -26,11 +26,44 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Mascot */
+@keyframes mascot-slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(90vw);
+    }
+
+}
+
+@keyframes mascot-shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-25deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(25deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.mascot-container {
+    position: fixed;
+    bottom: 10px;
+    z-index: 1000;
+    left: 25px;
+
+    .mascot-image {
+        width: 100px;
+        height: auto;
+        position: relative;
+        animation: mascot-slide 3s forwards, mascot-shake 5s 3s infinite forwards;
+    }
+}
+
 /* Header */
 header {
     background-color: #d9534f;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
