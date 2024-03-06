@@ -333,7 +333,7 @@ footer {
 
     /* Home */
     #home {
-        height: 420px;
+        height: 80vh;
     }
     .home-content {
         max-width: 90%;
@@ -414,6 +414,12 @@ footer {
     }
 
     /* Contact */
+
+    #contact {
+        padding: 0px;
+        padding-bottom: 50px;
+    }
+
     .contact-container{
         display: flex;
         flex-direction: column-reverse;
@@ -422,7 +428,7 @@ footer {
     .contact-info {
         position: relative;
         text-align: left;
-        max-width: 300px;
+        width: 80vw;
         left: 0px;
         margin-bottom: -40px;
     }
@@ -430,7 +436,8 @@ footer {
         background-color: var(--primary-color);
         color: white;
         padding: 20px;
-        max-width: 100%;
+        /* max-width: 100%; */
+        width: 80vw;
         border-radius: 10px;
         margin-bottom: 100px;
     }

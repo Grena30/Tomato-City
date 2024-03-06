@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.style.height = 'auto';
                 preview.innerHTML = '';
                 preview.appendChild(img);
-                button.innerText = 'Image Uploaded';
+                button.innerText = 'Upload';
                 message.innerText = 'Image uploaded successfully!';
                 message.classList.remove('error');
                 message.classList.add('success');
