@@ -27,6 +27,18 @@ body {
 }
 
 /* Mascot */
+@keyframes mascot-initial-slide {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
 @keyframes mascot-slide {
     0%, 100% {
         transform: translateX(0);
@@ -45,6 +57,30 @@ body {
     100% { transform: rotate(0deg); }
 }
 
+@keyframes show-message {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.welcome-message {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -50px;
+    left: 90px;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px;
+    z-index: 10;
+    transition: all 0.2s ease-in-out, visibility 0.1s ease-in-out;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 18px;
+    width: 150px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
 .mascot-container {
     position: fixed;
     bottom: 10px;
@@ -55,8 +91,16 @@ body {
         width: 100px;
         height: auto;
         position: relative;
-        animation: mascot-slide 3s forwards, mascot-shake 5s 3s infinite forwards;
+        opacity: 0;
+        animation: mascot-initial-slide 2.5s 5s forwards, mascot-slide 3s 8s forwards, mascot-shake 7.5s 12s infinite forwards;
     }
+}  
+    .welcome-message {
+        animation: show-message 0.5s 12s forwards;
+}
+
+.mascot-container:hover .welcome-message {
+    visibility: visible;
 }
 
 /* Header */
@@ -355,7 +399,13 @@ footer {
     nav ul li a {
         font-size: 16px;
     }
-    
+
+    /* Mascot */
+    .mascot-container .mascot-image {
+        opacity: 0;
+        animation: none;
+    }
+
     /* Header */
     header {
         padding: 15px;
