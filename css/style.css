@@ -207,24 +207,6 @@ nav ul li a {
     transform: translateY(1px);
 }
 
-/* About */
-#about {
-    p {
-        max-width: 800px;
-        font-size: medium;
-        margin: 0 auto;
-    }
-    img {
-        width: 1000px;
-        height: auto;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 5px solid #d9534f;
-    
-    }
-}
-
-
 /* Varieties */
 .variety-container {
     display: flex;
@@ -426,16 +408,6 @@ footer {
     }
     .home-desc {
         font-size: 14px;
-    }
-
-    /* About */
-    #about p {
-        max-width: 100%;
-        font-size: 14px;
-    }
-    #about img {
-        width: 100%;
-        max-width: 100%;
     }
 
     /* Varieties */
