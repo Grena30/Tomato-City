@@ -1,6 +1,11 @@
 # Tomato City
 
-Welcome to Tomato City, your one-stop destination for all things tomato!
+Tomato City is an easy-to-use web application for viewing different types of tomatoes. To begin browsing simply access the following link [Tomato-City](https://grena30.github.io/Tomato-City).
+
+## Features
+
+- Wide selection of fresh and delicious tomatoes.
+- Detailed information about different tomato varieties.
 
 ## Screenshots
 ### Landing Page
@@ -9,15 +14,5 @@ Welcome to Tomato City, your one-stop destination for all things tomato!
 ### Products Page
 ![Variety Page](screenshots/tomato_varieties.png?raw=true "Landing Page")
 
-## Features
 
-- Wide selection of fresh and delicious tomatoes.
-- Detailed information about different tomato varieties.
-- Contact us for inquiries and orders.
-
-## Web Application
-
-Tomato City offers an easy-to-use web application for exploring our tomato selection. To begin browsing simply access our website at https://grena30.github.io/Tomato-City/.
-
-Stay tuned for updates and new features!
 
